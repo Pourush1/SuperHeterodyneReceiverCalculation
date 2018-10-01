@@ -1,0 +1,24 @@
+#myChart{
+    background-color: #F1ECEE ;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+#inputData{
+    background-color: #F7F8FA ;
+    min-height: 300px;
+
+}
+
+.frequencyTable{
+        border-collapse: collapse;
+        border: 5px solid #E8F4F5;
+        margin-bottom: 12px;
+}
+
+.frequencyTable tr td{
+   
+        width: 50px;
+        padding : 20px;
+    
+}

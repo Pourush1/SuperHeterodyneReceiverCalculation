@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="css/signalfilter.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+<body>
+    <div class="container">
+        <div id="myChart">
+            
+        </div>
+        <div id="inputData">
+            <div id="frequencySection" class="row">
+                <div class="col-md-4 col-md-offset-1">
+                    <table class= "frequencyTable">
+                        <tr>
+                            <td colspan="4">
+                                CENTER FREQUENCY
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td>
+                                MHz
+                            </td>
+                            <td>
+                                    <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                            </td>
+                            <td>
+                                     <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                            </td>
+                        </tr>
+                        <tr style="text-align: center">
+                            <td colspan="4">
+                                KHz MHz STEP 
+                                &nbsp;
+                                <input type="text" >
+                            </td>
+                            
+
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4 col-md-offset-1 ">
+                        <table class= "frequencyTable">
+                                <tr>
+                                    <td colspan="4">
+                                        CENTER FREQUENCY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text">
+                                    </td>
+                                    <td>
+                                        MHz
+                                    </td>
+                                    <td>
+                                            <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                                    </td>
+                                    <td>
+                                             <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                                    </td>
+                                </tr>
+                                <tr style="text-align: center">
+                                    <td colspan="4">
+                                        KHz MHz STEP 
+                                        &nbsp;
+                                        <input type="text" >
+                                    </td>
+                                    
+        
+                                </tr>
+                            </table>
+                </div>
+            </div>
+            <hr>
+            
+            <div id="dataSection" class="row">
+                <div class="col-md-4">
+                    <table style="width : 100%">
+                        <tr>
+                             <th colspan="3" style="text-align: center">SONRESS</th>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td >FREQ <input type="text"></td>
+                            <td>INTENSITY <input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td >FREQ <input type="text"></td>
+                            <td>INTENSITY <input type="text"></td>
+                         </tr>
+                         <tr>
+                             <td>C</td>
+                             <td> >FREQ <input type="text"></td>
+                             <td>INTENSITY <input type="text"></td>
+                         </tr>
+                         <tr>
+                             <td>D</td>
+                             <td>FREQ <input type="text"></td>
+                             <td>INTENSITY <input type="text"></td>
+                         </tr>
+                    </table>
+                </div>
+
+                <div class="col-md-4">
+                    <table style= "width:100%">
+                        <tr>
+                            <th colspan="3" style="text-align : center;margin-bottom: 20px">DISPLAY</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                CENTER <input type="text" style="margin-bottom: 20px; margin-left: 20px; margin-top: 20px">
+                            </td>
+                            <td>
+                                <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                            </td>
+                            <td>
+                                 <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4">
+                                 KHz MHz STEP 
+                                 &nbsp;
+                                 <input type="text" style="margin-bottom: 20px" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                WIDTH <input type="text" style= "margin-bottom: 20px; margin-left: 20px">
+                        </td>
+                            <td>
+                                <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                             </td>
+                             <td>
+                                <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+                             </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4">
+                                 KHz MHz STEP 
+                                 &nbsp;
+                                <input type="text" >
+                             </td>
+                        </tr>
+
+                    
+
+                    </table>
+                    
+                </div>
+
+                <div class="col-md-4">
+                    <table>
+                        <tr>
+                            <td>SKY FILTER </td>
+                            <td>LOW <input type="text"></td>
+                            <td>HIGH <input type="text"></td>
+                            
+                        </tr>
+
+                        <tr>
+                                <td>IF1</td>
+                                <td>LOW <input type="text"></td>
+                                <td>HIGH <input type="text"></td>
+                                
+                        </tr>
+                        
+                        <tr>
+                                <td>IF FILTER 1</td>
+                                <td>LOW <input type="text"></td>
+                                <td>HIGH <input type="text"></td>
+                                
+                        </tr>
+
+                        <tr>
+                                <td>IF2</td>
+                                <td>LOW <input type="text"></td>
+                                <td>HIGH <input type="text"></td>
+                                
+                        </tr>
+
+                        <tr>
+                                <td>IF FILTER 2</td>
+                                <td>LOW <input type="text"></td>
+                                <td>HIGH <input type="text"></td>
+                                
+                         </tr>
+                            
+                        
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+
+    <script type="text/javascript" src="js/signalfilter.js"></script>
+</body>
+</html>
