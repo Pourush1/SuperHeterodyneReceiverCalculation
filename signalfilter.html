@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
             <link rel="stylesheet" href="css/signalfilter.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
 <body>
     <div class="container">
-        <div id="myChart">
-            
-        </div>
+        <div class="chartContainer" style="height: 300px; width: 100%;"></div>
+       
         <div id="inputData">
             <div id="frequencySection" class="row">
                 <div class="col-md-4 col-md-offset-1">
@@ -82,7 +81,7 @@
             
             <div id="dataSection" class="row">
                 <div class="col-md-4">
-                    <table style="width : 100%">
+                    <table id= "firstTable">
                         <tr>
                              <th colspan="3" style="text-align: center">SONRESS</th>
                         </tr>
@@ -98,7 +97,7 @@
                          </tr>
                          <tr>
                              <td>C</td>
-                             <td> >FREQ <input type="text"></td>
+                             <td>FREQ <input type="text"></td>
                              <td>INTENSITY <input type="text"></td>
                          </tr>
                          <tr>
@@ -110,13 +109,13 @@
                 </div>
 
                 <div class="col-md-4">
-                    <table style= "width:100%">
+                    <table>
                         <tr>
-                            <th colspan="3" style="text-align : center;margin-bottom: 20px">DISPLAY</th>
+                            <th  style="text-align :center;margin-bottom: 20px">DISPLAY</th>
                         </tr>
                         <tr>
                             <td>
-                                CENTER <input type="text" style="margin-bottom: 20px; margin-left: 20px; margin-top: 20px">
+                                CENTER <input type="text" style="margin-bottom: 20px; margin-left: 50px; margin-top: 20px">
                             </td>
                             <td>
                                 <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
@@ -127,18 +126,19 @@
                         </tr>
 
                         <tr>
-                            <td colspan="4">
+                            <td>
                                  KHz MHz STEP 
                                  &nbsp;
                                  <input type="text" style="margin-bottom: 20px" >
                             </td>
                         </tr>
+                       
                         <tr>
                             <td>
-                                WIDTH <input type="text" style= "margin-bottom: 20px; margin-left: 20px">
+                                WIDTH <input type="text" style= "margin-bottom: 20px; margin-left: 60px">
                         </td>
                             <td>
-                                <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-arrow-down" aria-hidden="true" style="width:50px;"></span>
                              </td>
                              <td>
                                 <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
@@ -146,7 +146,7 @@
                         </tr>
 
                         <tr>
-                            <td colspan="4">
+                            <td>
                                  KHz MHz STEP 
                                  &nbsp;
                                 <input type="text" >
@@ -160,39 +160,39 @@
                 </div>
 
                 <div class="col-md-4">
-                    <table>
+                    <table id= "thirdTable">
                         <tr>
-                            <td>SKY FILTER </td>
-                            <td>LOW <input type="text"></td>
-                            <td>HIGH <input type="text"></td>
+                            <td><span style="margin-right: 20px;">SKY FILTER</span> </td>
+                            <td>LOW <input type="text" style="width: 40px;"></td>
+                            <td>HIGH <input type="text" style = "width: 40px"></td>
                             
                         </tr>
 
                         <tr>
-                                <td>IF1</td>
-                                <td>LOW <input type="text"></td>
-                                <td>HIGH <input type="text"></td>
+                                <td><span>IF1</span></td>
+                                <td>LOW <input type="text" style="width:40px;"></td>
+                                <td>HIGH <input type="text" style= "width: 40px;"></td>
                                 
                         </tr>
                         
                         <tr>
-                                <td>IF FILTER 1</td>
-                                <td>LOW <input type="text"></td>
-                                <td>HIGH <input type="text"></td>
+                                <td style="padding: 15px;"><span>IF FILTER 1</span></td>
+                                <td>LOW <input type="text" style="width: 40px;"></td>
+                                <td>HIGH <input type="text" style= "width: 40px;"></td>
                                 
                         </tr>
 
                         <tr>
-                                <td>IF2</td>
-                                <td>LOW <input type="text"></td>
-                                <td>HIGH <input type="text"></td>
+                                <td style="padding: 15px;">IF2</td>
+                                <td>LOW <input type="text" style= "width: 40px;"></td>
+                                <td>HIGH <input type="text" style= "width: 40px;"></td>
                                 
                         </tr>
 
                         <tr>
-                                <td>IF FILTER 2</td>
-                                <td>LOW <input type="text"></td>
-                                <td>HIGH <input type="text"></td>
+                                <td style="padding: 15px;">IF FILTER 2</td>
+                                <td>LOW <input type="text" style="width:40px;"></td>
+                                <td>HIGH <input type="text" style= "width:40px;"></td>
                                 
                          </tr>
                             

@@ -22,3 +22,11 @@
         padding : 20px;
     
 }
+
+#thirdTable tr td{
+    padding: 15px;
+}
+
+#firstTable tr td{
+    padding: 2px;
+}
